@@ -1,0 +1,372 @@
+public boolean remove(Object o) {
+		
+		boolean retorno=false;
+		if(o!=null && array.length>0)
+		{
+			Object[] newarray=new Object[array.length-1];
+			
+			int b=0;
+			
+				for(int i=0;i<array.length;i++){
+				
+					if(array[i]!=o)
+					{
+						b++;
+						newarray[b]=array[i];
+					}
+					
+				
+				}
+				retorno=true;
+				array=newarray;
+		}
+		return retorno;
+		//return false;
+	}
+
+
+alumno@CCT2PC06 MINGW64 ~/Desktop
+$ git clone https://github.com/martin919191/JavaIntermedio.git
+Cloning into 'JavaIntermedio'...
+remote: Enumerating objects: 824, done.
+remote: Counting objects: 100% (824/824), done.
+remote: Compressing objects: 100% (529/529), done.
+remote: Total 824 (delta 228), reused 766 (delta 178), pack-reused 0
+Receiving objects: 100% (824/824), 5.44 MiB | 2.06 MiB/s, done.
+Resolving deltas: 100% (228/228), done.
+
+alumno@CCT2PC06 MINGW64 ~/Desktop
+$ cd JavaIntermedio
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (master)
+$ git checkout development
+Switched to a new branch 'development'
+Branch 'development' set up to track remote branch 'development' from 'origin'.
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (master)
+$ git checkout development
+Switched to branch 'development'
+Your branch is up to date with 'origin/development'.
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git status
+On branch development
+Your branch is up to date with 'origin/development'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .metadata/.log
+        modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1089239932.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1159935248.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1578085759.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1628687906.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1947779353.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2253745042.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2359322674.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2744878784.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2861791631.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3066711521.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3068422625.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3485262699.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3512161136.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3530540584.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3539432263.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/35648045.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3883508318.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3927879410.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3952551853.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/502732891.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/813341167.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/821608291.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/925982370.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/.install.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png
+        modified:   .metadata/version.ini
+        modified:   04_EjemploInterfaces/bin/entities/Bird.class
+        modified:   04_EjemploInterfaces/bin/entities/Plane.class
+        modified:   07_Collections/bin/collections/Program.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+        .metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json
+        .metadata/.plugins/org.eclipse.jdt.core/153807610.index
+        .metadata/.plugins/org.eclipse.jdt.core/1705022601.index
+        .metadata/.plugins/org.eclipse.jdt.core/1778527062.index
+        .metadata/.plugins/org.eclipse.jdt.core/181763198.index
+        .metadata/.plugins/org.eclipse.jdt.core/2164373211.index
+        .metadata/.plugins/org.eclipse.jdt.core/2380175872.index
+        .metadata/.plugins/org.eclipse.jdt.core/2980874708.index
+        .metadata/.plugins/org.eclipse.jdt.core/2983885227.index
+        .metadata/.plugins/org.eclipse.jdt.core/3091521419.index
+        .metadata/.plugins/org.eclipse.jdt.core/3126256368.index
+        .metadata/.plugins/org.eclipse.jdt.core/3182610778.index
+        .metadata/.plugins/org.eclipse.jdt.core/3270544427.index
+        .metadata/.plugins/org.eclipse.jdt.core/3706223892.index
+        .metadata/.plugins/org.eclipse.jdt.core/3893358967.index
+        .metadata/.plugins/org.eclipse.jdt.core/3902012412.index
+        .metadata/.plugins/org.eclipse.jdt.core/3967054448.index
+        .metadata/.plugins/org.eclipse.jdt.core/4163805163.index
+        .metadata/.plugins/org.eclipse.jdt.core/628082354.index
+        .metadata/.plugins/org.eclipse.jdt.core/667629887.index
+        .metadata/.plugins/org.eclipse.jdt.core/783746982.index
+        .metadata/.plugins/org.eclipse.jdt.core/86106727.index
+        .metadata/.plugins/org.eclipse.m2e.logback.configuration/
+        03_EjemploClaseAnonima/.gitignore
+        04_EjemploInterfaces/.gitignore
+        05_EjemploDAOFactory/.gitignore
+        06_Genericos/.gitignore
+        HelloWorld/.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git status
+On branch development
+Your branch is up to date with 'origin/development'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .metadata/.log
+        modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1089239932.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1159935248.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1578085759.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1628687906.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1947779353.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2253745042.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2359322674.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2744878784.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2861791631.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3066711521.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3068422625.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3485262699.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3512161136.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3530540584.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3539432263.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/35648045.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3883508318.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3927879410.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3952551853.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/502732891.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/813341167.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/821608291.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/925982370.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/.install.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png
+        modified:   .metadata/version.ini
+        modified:   04_EjemploInterfaces/bin/entities/Bird.class
+        modified:   04_EjemploInterfaces/bin/entities/Plane.class
+        modified:   07_Collections/bin/collections/Program.class
+        modified:   07_Collections/src/collections/ArrayList.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/.mylyn/
+        .metadata/.plugins/org.eclipse.core.resources/.history/ba/105512aaa4d100181ff4c694a28ff5dc
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+        .metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json
+        .metadata/.plugins/org.eclipse.jdt.core/153807610.index
+        .metadata/.plugins/org.eclipse.jdt.core/1705022601.index
+        .metadata/.plugins/org.eclipse.jdt.core/1778527062.index
+        .metadata/.plugins/org.eclipse.jdt.core/181763198.index
+        .metadata/.plugins/org.eclipse.jdt.core/2164373211.index
+        .metadata/.plugins/org.eclipse.jdt.core/2380175872.index
+        .metadata/.plugins/org.eclipse.jdt.core/2980874708.index
+        .metadata/.plugins/org.eclipse.jdt.core/2983885227.index
+        .metadata/.plugins/org.eclipse.jdt.core/3091521419.index
+        .metadata/.plugins/org.eclipse.jdt.core/3126256368.index
+        .metadata/.plugins/org.eclipse.jdt.core/3182610778.index
+        .metadata/.plugins/org.eclipse.jdt.core/3270544427.index
+        .metadata/.plugins/org.eclipse.jdt.core/3706223892.index
+        .metadata/.plugins/org.eclipse.jdt.core/3893358967.index
+        .metadata/.plugins/org.eclipse.jdt.core/3902012412.index
+        .metadata/.plugins/org.eclipse.jdt.core/3967054448.index
+        .metadata/.plugins/org.eclipse.jdt.core/4163805163.index
+        .metadata/.plugins/org.eclipse.jdt.core/628082354.index
+        .metadata/.plugins/org.eclipse.jdt.core/667629887.index
+        .metadata/.plugins/org.eclipse.jdt.core/783746982.index
+        .metadata/.plugins/org.eclipse.jdt.core/86106727.index
+        .metadata/.plugins/org.eclipse.m2e.logback.configuration/
+        03_EjemploClaseAnonima/.gitignore
+        04_EjemploInterfaces/.gitignore
+        05_EjemploDAOFactory/.gitignore
+        06_Genericos/.gitignore
+        HelloWorld/.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git add 07_Collections/src/collections/ArrayList.java
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git status
+On branch development
+Your branch is up to date with 'origin/development'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   07_Collections/src/collections/ArrayList.java
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .metadata/.log
+        modified:   .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1089239932.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1159935248.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1578085759.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1628687906.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/1947779353.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2253745042.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2359322674.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2744878784.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/2861791631.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3066711521.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3068422625.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3485262699.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3512161136.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3530540584.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3539432263.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/35648045.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3883508318.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3927879410.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/3952551853.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/502732891.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/813341167.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/821608291.index
+        deleted:    .metadata/.plugins/org.eclipse.jdt.core/925982370.index
+        modified:   .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/.install.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml
+        modified:   .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png
+        deleted:    .metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png
+        modified:   .metadata/version.ini
+        modified:   04_EjemploInterfaces/bin/entities/Bird.class
+        modified:   04_EjemploInterfaces/bin/entities/Plane.class
+        modified:   07_Collections/bin/collections/Program.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/.mylyn/
+        .metadata/.plugins/org.eclipse.core.resources/.history/ba/105512aaa4d100181ff4c694a28ff5dc
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+        .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+        .metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json
+        .metadata/.plugins/org.eclipse.jdt.core/153807610.index
+        .metadata/.plugins/org.eclipse.jdt.core/1705022601.index
+        .metadata/.plugins/org.eclipse.jdt.core/1778527062.index
+        .metadata/.plugins/org.eclipse.jdt.core/181763198.index
+        .metadata/.plugins/org.eclipse.jdt.core/2164373211.index
+        .metadata/.plugins/org.eclipse.jdt.core/2380175872.index
+        .metadata/.plugins/org.eclipse.jdt.core/2980874708.index
+        .metadata/.plugins/org.eclipse.jdt.core/2983885227.index
+        .metadata/.plugins/org.eclipse.jdt.core/3091521419.index
+        .metadata/.plugins/org.eclipse.jdt.core/3126256368.index
+        .metadata/.plugins/org.eclipse.jdt.core/3182610778.index
+        .metadata/.plugins/org.eclipse.jdt.core/3270544427.index
+        .metadata/.plugins/org.eclipse.jdt.core/3706223892.index
+        .metadata/.plugins/org.eclipse.jdt.core/3893358967.index
+        .metadata/.plugins/org.eclipse.jdt.core/3902012412.index
+        .metadata/.plugins/org.eclipse.jdt.core/3967054448.index
+        .metadata/.plugins/org.eclipse.jdt.core/4163805163.index
+        .metadata/.plugins/org.eclipse.jdt.core/628082354.index
+        .metadata/.plugins/org.eclipse.jdt.core/667629887.index
+        .metadata/.plugins/org.eclipse.jdt.core/783746982.index
+        .metadata/.plugins/org.eclipse.jdt.core/86106727.index
+        .metadata/.plugins/org.eclipse.m2e.logback.configuration/
+        03_EjemploClaseAnonima/.gitignore
+        04_EjemploInterfaces/.gitignore
+        05_EjemploDAOFactory/.gitignore
+        06_Genericos/.gitignore
+        HelloWorld/.gitignore
+
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git commit -m " agrego implementacion del metodo remove"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'alumno@CCT2PC06.(none)')
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git config --global user.email "ayalaprogamas@gmail.com"
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git config --global user.name "ayalaProgramas"
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git commit -m " agrego implementacion del metodo remove"
+[development 9a73fbd]  agrego implementacion del metodo remove
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$ git push
+Username for 'https://github.com': ayalaProgramas
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 659 bytes | 659.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/martin919191/JavaIntermedio.git
+   4f92c8f..9a73fbd  development -> development
+
+alumno@CCT2PC06 MINGW64 ~/Desktop/JavaIntermedio (development)
+$
