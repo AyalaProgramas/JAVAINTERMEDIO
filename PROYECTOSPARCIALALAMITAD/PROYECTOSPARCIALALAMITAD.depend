@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1525464816 source:c:\users\lenovo\desktop\proyectosparcialalamitad\fparcialempleado.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"fParcialEmpleado.h"
+
+1525464816 c:\users\lenovo\desktop\proyectosparcialalamitad\fparcialempleado.h
+
+1525464816 source:c:\users\lenovo\desktop\proyectosparcialalamitad\utn.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1525465573 source:c:\users\lenovo\desktop\proyectosparcialalamitad\main.c
+	<stdio.h>
+	<stdlib.h>
+
