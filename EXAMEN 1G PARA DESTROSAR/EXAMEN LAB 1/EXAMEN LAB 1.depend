@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1475198476 source:d:\examen lab 1\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"FUNCIONES.h"
+
+1475198467 d:\examen lab 1\funciones.h
+
+1475199119 source:d:\examen lab 1\laboratorio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCIONES.h"
+	"LABORATORIO.h"
+	<ctype.h>
+
+1475198627 d:\examen lab 1\laboratorio.h
+
+1475199057 source:d:\examen lab 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCIONES.h"
+	<ctype.h>
+	"LABORATORIO.h"
+

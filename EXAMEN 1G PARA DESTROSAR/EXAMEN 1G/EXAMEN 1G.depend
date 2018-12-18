@@ -1,0 +1,113 @@
+# depslib dependency file v1.0
+1474841527 source:c:\users\jose\desktop\examen 1g\funcion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"FUNCION.h"
+
+1474841527 c:\users\jose\desktop\examen 1g\funcion.h
+
+1474914974 source:c:\users\jose\desktop\examen 1g\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	"LIBRERIA.h"
+	<ctype.h>
+
+1474915613 source:c:\users\jose\desktop\examen 1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	<ctype.h>
+	"LIBRERIA.h"
+
+1474915613 c:\users\jose\desktop\examen 1g\libreria.h
+
+1474841528 source:f:\examen 1g\funcion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"FUNCION.h"
+
+1474841528 f:\examen 1g\funcion.h
+
+1474916040 source:f:\examen 1g\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	"LIBRERIA.h"
+	<ctype.h>
+
+1474937150 f:\examen 1g\libreria.h
+
+1474931962 source:f:\examen 1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	<ctype.h>
+	"LIBRERIA.h"
+
+1474841528 source:g:\examen 1g\funcion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"FUNCION.h"
+
+1474841528 g:\examen 1g\funcion.h
+
+1475070616 source:g:\examen 1g\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	"LIBRERIA.h"
+	<ctype.h>
+
+1475070616 g:\examen 1g\libreria.h
+
+1475069988 source:g:\examen 1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	<ctype.h>
+	"LIBRERIA.h"
+
+1475176815 source:c:\users\jose\desktop\examen 1g para destrosar\examen 1g\funcion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"FUNCION.h"
+
+1475079847 c:\users\jose\desktop\examen 1g para destrosar\examen 1g\funcion.h
+
+1475079921 source:c:\users\jose\desktop\examen 1g para destrosar\examen 1g\libreria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	"LIBRERIA.h"
+	<ctype.h>
+
+1475079826 c:\users\jose\desktop\examen 1g para destrosar\examen 1g\libreria.h
+
+1475079826 source:c:\users\jose\desktop\examen 1g para destrosar\examen 1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FUNCION.h"
+	<ctype.h>
+	"LIBRERIA.h"
+
